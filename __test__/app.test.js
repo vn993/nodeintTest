@@ -4,7 +4,7 @@ const app = require('../index');
 describe('Integration tests', () => {
   it('GET /health should return 200 OK', async () => {
     const res = await request(app).get('/health');
-    expect(res.statusCode).toEqual(201);
+    expect(res.statusCode).toEqual(200);
     expect(res.body.message).toBe('OK');
   });
 
